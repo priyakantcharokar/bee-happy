@@ -83,9 +83,11 @@ export default function HeroSearch() {
               fontSize: { xs: '1rem', md: '1.125rem' },
               fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
               fontWeight: 500,
-              color: 'text.primary',
+              color: (theme) => theme.palette.mode === 'light' ? 'text.primary' : '#2D2D2D',
               textShadow: '0 2px 4px rgba(0,0,0,0.1)',
-              background: 'rgba(255,255,255,0.85)',
+              background: (theme) => theme.palette.mode === 'light' 
+                ? 'rgba(255,255,255,0.85)' 
+                : 'rgba(255,255,255,0.95)',
               backdropFilter: 'blur(4px)',
               borderRadius: 2,
               px: 3,

@@ -236,21 +236,4 @@ a {
   color: inherit !important;
 }
 
-/* Fix text visibility in light mode for overlaid content */
-[data-mui-color-scheme="light"] .hero-bg .MuiTypography-body1 {
-  background: rgba(255,255,255,0.9) !important;
-  backdrop-filter: blur(8px) !important;
-  border-radius: 8px !important;
-  padding: 12px 24px !important;
-  color: #2D2D2D !important;
-  text-shadow: none !important;
-}
-
-[data-mui-color-scheme="dark"] .hero-bg .MuiTypography-body1 {
-  background: rgba(255,255,255,0.95) !important;
-  backdrop-filter: blur(8px) !important;
-  border-radius: 8px !important;
-  padding: 12px 24px !important;
-  color: #2D2D2D !important;
-  text-shadow: none !important;
-}
+/* Remove conflicting CSS - text styling now handled in component */
