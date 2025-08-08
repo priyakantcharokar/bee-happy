@@ -1,11 +1,11 @@
 "use client";
-import { useMemo } from "react";
+import { useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Box, Chip, Divider, FormControlLabel, Grid, Stack, Switch, Typography } from "@mui/material";
 import TripCard, { Trip } from "@/components/TripCard";
 import trips from "@/data/trips.json";
 
-export default function ExplorePage() {
+function ExploreContent() {
   const params = useSearchParams();
   const q = params.get("q")?.toLowerCase() ?? "";
   const heritage = params.get("heritage") === "1";
@@ -49,6 +49,14 @@ export default function ExplorePage() {
         ))}
       </Grid>
     </Box>
+  );
+}
+
+export default function ExplorePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ExploreContent />
+    </Suspense>
   );
 }
 

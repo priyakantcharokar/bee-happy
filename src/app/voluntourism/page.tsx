@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
-import EcoIcon from "@mui/icons-material/Eco";
+import SpaIcon from "@mui/icons-material/Spa";
 import GroupsIcon from "@mui/icons-material/Groups";
 import SchoolIcon from "@mui/icons-material/School";
 
@@ -45,7 +45,7 @@ const programs = [
 ];
 
 const impacts = [
-  { icon: <EcoIcon />, title: "Environmental Impact", desc: "10,000+ trees planted, 500+ acres restored" },
+  { icon: <SpaIcon />, title: "Environmental Impact", desc: "10,000+ trees planted, 500+ acres restored" },
   { icon: <GroupsIcon />, title: "Community Empowerment", desc: "200+ families supported, 50+ projects completed" },
   { icon: <SchoolIcon />, title: "Education Support", desc: "1,000+ children educated, 20+ schools supported" },
   { icon: <VolunteerActivismIcon />, title: "Volunteer Network", desc: "2,000+ volunteers, 95% satisfaction rate" }
