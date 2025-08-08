@@ -63,10 +63,13 @@ export default function HeroSearch() {
               fontWeight: 700,
               lineHeight: { xs: 1.1, md: 1.2 },
               letterSpacing: { xs: '-0.015em', md: '-0.02em' },
-              background: "linear-gradient(135deg, #2D7D32 0%, #689F38 100%)",
+              background: (theme) => theme.palette.mode === 'light' 
+                ? "linear-gradient(135deg, #2D7D32 0%, #689F38 100%)" 
+                : "linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%)",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
+              textShadow: '0 4px 8px rgba(0,0,0,0.2)',
               mb: 2
             }}
           >
@@ -79,8 +82,14 @@ export default function HeroSearch() {
               lineHeight: 1.6,
               fontSize: { xs: '1rem', md: '1.125rem' },
               fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
-              fontWeight: 400,
-              color: '#4F4F4F'
+              fontWeight: 500,
+              color: 'text.primary',
+              textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              background: 'rgba(255,255,255,0.85)',
+              backdropFilter: 'blur(4px)',
+              borderRadius: 2,
+              px: 3,
+              py: 1.5
             }}
           >
             Discover extraordinary destinations while creating positive environmental change — where wanderlust meets purpose.

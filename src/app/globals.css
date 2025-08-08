@@ -188,22 +188,64 @@ a {
   overflow: hidden;
 }
 
-/* Improved text contrast for dark mode */
+/* Improved text contrast for both light and dark modes */
+[data-mui-color-scheme="light"] .MuiTypography-root {
+  color: #2D2D2D !important;
+}
+
+[data-mui-color-scheme="light"] .MuiTypography-body1,
+[data-mui-color-scheme="light"] .MuiTypography-body2 {
+  color: #4F4F4F !important;
+}
+
+[data-mui-color-scheme="light"] .MuiTypography-caption {
+  color: #757575 !important;
+}
+
 [data-mui-color-scheme="dark"] .MuiTypography-root {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 [data-mui-color-scheme="dark"] .MuiTypography-body1,
 [data-mui-color-scheme="dark"] .MuiTypography-body2 {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.87) !important;
 }
 
 [data-mui-color-scheme="dark"] .MuiTypography-caption {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* Beautiful gradient borders for cards in dark mode */
 [data-mui-color-scheme="dark"] .MuiCard-root {
   background: linear-gradient(145deg, #1a2b32 0%, #0f1f26 100%) !important;
   border: 1px solid rgba(45,125,50,0.2) !important;
+}
+
+/* Enhanced text visibility on images and overlays */
+.hero-bg .MuiTypography-root {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Ensure proper contrast for text over images */
+.MuiCardContent-root .MuiTypography-root {
+  color: inherit !important;
+}
+
+/* Fix text visibility in light mode for overlaid content */
+[data-mui-color-scheme="light"] .hero-bg .MuiTypography-body1 {
+  background: rgba(255,255,255,0.9) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  color: #2D2D2D !important;
+  text-shadow: none !important;
+}
+
+[data-mui-color-scheme="dark"] .hero-bg .MuiTypography-body1 {
+  background: rgba(0,0,0,0.7) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
 }
