@@ -47,105 +47,105 @@ export function getTheme(mode: ThemeMode = "light", cultural: boolean = false) {
       warning: { main: accentTerracotta },
     },
     typography: {
-      // Primary font for UI & body text - Inter with system fallbacks
-      fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      // Primary font - Charter for body text with elegant serif fallbacks
+      fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
       
       // Base font size and line height for optimal readability
       fontSize: 16,
       
-      // Heading typography - Bold, high contrast, tighter letter-spacing
+      // Heading typography - Kievit for headings with geometric precision
       h1: { 
-        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 700,
         fontSize: '2.5rem',
         lineHeight: 1.2,
         letterSpacing: '-0.02em',
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       h2: { 
-        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 700,
         fontSize: '2rem',
         lineHeight: 1.2,
         letterSpacing: '-0.015em',
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       h3: { 
-        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 700,
         fontSize: '1.5rem',
         lineHeight: 1.2,
         letterSpacing: '-0.01em',
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       h4: { 
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 600,
         fontSize: '1.25rem',
         lineHeight: 1.3,
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       h5: { 
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 600,
         fontSize: '1.125rem',
         lineHeight: 1.3,
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       h6: { 
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 600,
         fontSize: '1rem',
         lineHeight: 1.4,
-        color: typographyColors.primary
+        color: mode === 'light' ? typographyColors.primary : baseTextPrimary
       },
       
-      // Body text - Medium weight, optimal readability
+      // Body text - Charter for elegant readability
       body1: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
         fontWeight: 400,
         fontSize: '1rem',
-        lineHeight: 1.5,
-        color: typographyColors.secondary
+        lineHeight: 1.6,
+        color: mode === 'light' ? typographyColors.secondary : baseTextSecondary
       },
       body2: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
         fontWeight: 400,
         fontSize: '0.875rem',
-        lineHeight: 1.5,
-        color: typographyColors.secondary
+        lineHeight: 1.6,
+        color: mode === 'light' ? typographyColors.secondary : baseTextSecondary
       },
       
-      // Subtitles and captions
+      // Subtitles and captions - Kievit for UI elements
       subtitle1: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 500,
         fontSize: '1rem',
         lineHeight: 1.4,
-        color: typographyColors.secondary
+        color: mode === 'light' ? typographyColors.secondary : baseTextSecondary
       },
       subtitle2: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 500,
         fontSize: '0.875rem',
         lineHeight: 1.4,
-        color: typographyColors.secondary
+        color: mode === 'light' ? typographyColors.secondary : baseTextSecondary
       },
       caption: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
         fontWeight: 300,
         fontSize: '0.75rem',
         lineHeight: 1.4,
-        color: typographyColors.hint
+        color: mode === 'light' ? typographyColors.hint : baseTextSecondary
       },
       overline: {
-        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
         fontWeight: 500,
         fontSize: '0.75rem',
         lineHeight: 1.4,
         letterSpacing: '0.08em',
         textTransform: 'uppercase',
-        color: typographyColors.hint
+        color: mode === 'light' ? typographyColors.hint : baseTextSecondary
       },
       
       // Button typography - Poppins for prominence
@@ -174,12 +174,38 @@ export function getTheme(mode: ThemeMode = "light", cultural: boolean = false) {
       MuiCard: {
         styleOverrides: {
           root: {
-            borderRadius: 18,
-            boxShadow:
-              mode === "light"
-                ? "0 1px 2px rgba(0,0,0,0.04), 0 12px 28px rgba(16,54,77,0.10)"
-                : "0 1px 2px rgba(0,0,0,0.6), 0 12px 28px rgba(0,0,0,0.4)",
-            border: `1px solid ${decorativeBorder}`,
+            borderRadius: 24,
+            background: mode === 'light' 
+              ? 'linear-gradient(145deg, #ffffff 0%, #fafbfa 100%)'
+              : 'linear-gradient(145deg, #1a2b32 0%, #0f1f26 100%)',
+            boxShadow: mode === "light"
+              ? "0 4px 6px rgba(0,0,0,0.02), 0 12px 40px rgba(45,125,50,0.08), 0 0 0 1px rgba(45,125,50,0.04)"
+              : "0 4px 6px rgba(0,0,0,0.3), 0 12px 40px rgba(0,0,0,0.2), 0 0 0 1px rgba(45,125,50,0.1)",
+            border: 'none',
+            overflow: 'visible', // Prevent edge cutting
+            position: 'relative',
+            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              inset: 0,
+              borderRadius: 24,
+              padding: '1px',
+              background: mode === 'light'
+                ? 'linear-gradient(145deg, rgba(45,125,50,0.1), rgba(104,159,56,0.05))'
+                : 'linear-gradient(145deg, rgba(45,125,50,0.2), rgba(104,159,56,0.1))',
+              mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              maskComposite: 'xor',
+              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              WebkitMaskComposite: 'xor',
+              pointerEvents: 'none'
+            },
+            '&:hover': {
+              transform: 'translateY(-4px)',
+              boxShadow: mode === "light"
+                ? "0 8px 25px rgba(45,125,50,0.15), 0 4px 10px rgba(0,0,0,0.08)"
+                : "0 8px 25px rgba(0,0,0,0.4), 0 4px 10px rgba(45,125,50,0.2)"
+            }
           },
         },
       },

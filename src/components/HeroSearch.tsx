@@ -59,7 +59,7 @@ export default function HeroSearch() {
             variant="h1" 
             sx={{ 
               fontSize: { xs: "2rem", sm: "2.5rem", md: "3.5rem" },
-              fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+              fontFamily: 'Kievit, "Kievit Offc", Helvetica, Arial, sans-serif',
               fontWeight: 700,
               lineHeight: { xs: 1.1, md: 1.2 },
               letterSpacing: { xs: '-0.015em', md: '-0.02em' },
@@ -73,11 +73,12 @@ export default function HeroSearch() {
             GoSmiles — Go Sustainable Miles
           </Typography>
           <Typography 
-            variant="subtitle1" 
+            variant="body1" 
             sx={{ 
               maxWidth: 600, 
-              lineHeight: 1.5,
+              lineHeight: 1.6,
               fontSize: { xs: '1rem', md: '1.125rem' },
+              fontFamily: 'Charter, "Charter BT", "Bitstream Charter", "Times New Roman", Times, serif',
               fontWeight: 400,
               color: '#4F4F4F'
             }}

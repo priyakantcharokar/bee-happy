@@ -42,11 +42,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Import Charter and Kievit fonts */
+@import url('https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kievit:wght@300;400;500;600;700&display=swap');
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  font-family: 'Charter', 'Charter BT', 'Bitstream Charter', 'Times New Roman', Times, serif;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'onum' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -156,4 +160,50 @@ a {
   outline: 2px solid #2D7D32;
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* Beautiful card improvements */
+.MuiCard-root {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 6px rgba(0,0,0,0.02), 
+    0 12px 40px rgba(45,125,50,0.08), 
+    0 0 0 1px rgba(45,125,50,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.1) !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 
+    0 8px 25px rgba(45,125,50,0.15), 
+    0 4px 10px rgba(0,0,0,0.08),
+    0 0 0 1px rgba(45,125,50,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.2) !important;
+}
+
+/* Prevent image overflow in cards */
+.MuiCardMedia-root {
+  border-radius: 24px 24px 0 0 !important;
+  overflow: hidden;
+}
+
+/* Improved text contrast for dark mode */
+[data-mui-color-scheme="dark"] .MuiTypography-root {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-mui-color-scheme="dark"] .MuiTypography-body1,
+[data-mui-color-scheme="dark"] .MuiTypography-body2 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-mui-color-scheme="dark"] .MuiTypography-caption {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Beautiful gradient borders for cards in dark mode */
+[data-mui-color-scheme="dark"] .MuiCard-root {
+  background: linear-gradient(145deg, #1a2b32 0%, #0f1f26 100%) !important;
+  border: 1px solid rgba(45,125,50,0.2) !important;
 }

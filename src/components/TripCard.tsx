@@ -47,13 +47,10 @@ export default function TripCard({ trip }: { trip: Trip }) {
           height: 420, // Fixed height for all cards
           display: 'flex',
           flexDirection: 'column',
-          borderRadius: 3,
-          overflow: 'hidden',
-          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-          '&:hover': {
-            boxShadow: '0 20px 40px rgba(45, 125, 50, 0.15), 0 8px 16px rgba(45, 125, 50, 0.1)',
-            transform: 'translateY(-4px)',
-          }
+          borderRadius: 6, // Use theme's 24px radius
+          overflow: 'visible', // Prevent edge cutting
+          position: 'relative',
+          // Card styling is handled by theme
         }}
       >
       <CardActionArea component={Link} href={`/trips/${trip.id}`}>
@@ -64,9 +61,10 @@ export default function TripCard({ trip }: { trip: Trip }) {
           alt={trip.title}
           sx={{
             objectFit: 'cover',
+            borderRadius: '24px 24px 0 0', // Match card border radius
             transition: 'transform 0.3s ease',
             '&:hover': {
-              transform: 'scale(1.05)'
+              transform: 'scale(1.02)' // Reduced scale to prevent overflow
             }
           }}
         />
