@@ -10,7 +10,7 @@ import { useUiSettings } from "@/contexts/UiSettingsContext";
 export default function TopNav() {
   const { mode, setMode, cultural, setCultural } = useUiSettings();
   return (
-    <AppBar position="sticky" color="inherit" elevation={0} sx={{ py: 1 }}>
+    <AppBar position="fixed" color="inherit" elevation={0} sx={{ py: 1 }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ gap: 2 }}>
           <Typography variant="h6" fontWeight={800} color="primary.main">

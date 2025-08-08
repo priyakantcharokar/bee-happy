@@ -3,7 +3,14 @@ import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { CssBaseline, Container } from "@mui/material";
 import "@fontsource-variable/inter";
-import "@fontsource-variable/playfair-display";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
 import Providers from "./providers";
 import TopNav from "@/components/TopNav";
 import Footer from "@/components/Footer";
@@ -30,7 +37,7 @@ export default function RootLayout({
         <Providers>
           <TopNav />
           <Breadcrumbs />
-          <Container maxWidth="lg" sx={{ py: 4 }}>
+          <Container maxWidth="lg" sx={{ pt: 12, pb: 4 }}>
             {children}
           </Container>
           <Footer />

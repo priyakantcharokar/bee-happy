@@ -55,17 +55,33 @@ export default function HeroSearch() {
       {/* Hero Title */}
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <Stack alignItems="center" textAlign="center" spacing={2}>
-          <Typography variant="h1" sx={{ 
-            fontSize: { xs: "2.5rem", md: "3.5rem" },
-            background: "linear-gradient(135deg, #2D7D32 0%, #689F38 100%)",
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            mb: 1
-          }}>
-            Gosmiles — Go Sustainable Miles
+          <Typography 
+            variant="h1" 
+            sx={{ 
+              fontSize: { xs: "2rem", sm: "2.5rem", md: "3.5rem" },
+              fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+              fontWeight: 700,
+              lineHeight: { xs: 1.1, md: 1.2 },
+              letterSpacing: { xs: '-0.015em', md: '-0.02em' },
+              background: "linear-gradient(135deg, #2D7D32 0%, #689F38 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              mb: 2
+            }}
+          >
+            GoSmiles — Go Sustainable Miles
           </Typography>
-          <Typography variant="h5" color="text.secondary" sx={{ maxWidth: 600, lineHeight: 1.6 }}>
+          <Typography 
+            variant="subtitle1" 
+            sx={{ 
+              maxWidth: 600, 
+              lineHeight: 1.5,
+              fontSize: { xs: '1rem', md: '1.125rem' },
+              fontWeight: 400,
+              color: '#4F4F4F'
+            }}
+          >
             Your adventure awaits — where every journey heals the planet and awakens your soul.
           </Typography>
         </Stack>

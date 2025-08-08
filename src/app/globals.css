@@ -1,6 +1,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Typography scale - rem-based for scalability */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 2.5rem;    /* 40px */
+  
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.5;
+  
+  /* Letter spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.02em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +36,30 @@ body {
   overflow-x: hidden;
 }
 
+/* Improved text rendering */
+html {
+  font-size: 16px; /* Base font size for rem calculations */
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -62,4 +94,66 @@ a {
   background-image: radial-gradient(circle at 10px 10px, var(--line) 8px, transparent 9px);
   background-size: 28px 28px;
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Mobile typography optimizations */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Slightly smaller base size for mobile */
+  }
+  
+  /* Improved mobile form field typography */
+  .MuiTextField-root input,
+  .MuiTextField-root textarea {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    line-height: 1.5;
+  }
+  
+  /* Mobile-optimized button text */
+  .MuiButton-root {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Compact mobile headings */
+  h1, .MuiTypography-h1 {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.015em !important;
+  }
+  
+  h2, .MuiTypography-h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  h3, .MuiTypography-h3 {
+    font-size: 1.375rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus improvements for accessibility */
+*:focus-visible {
+  outline: 2px solid #2D7D32;
+  outline-offset: 2px;
+  border-radius: 4px;
 }

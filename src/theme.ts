@@ -5,6 +5,14 @@ const primary = { main: "#2D7D32", light: "#4CAF50", dark: "#1B5E20", contrastTe
 const secondary = { main: "#689F38", light: "#8BC34A", dark: "#33691E", contrastText: "#ffffff" }; // fresh green
 const accentTerracotta = "#558B2F"; // nature green
 
+// Typography colors for high contrast and accessibility (MakeMyTrip-inspired)
+const typographyColors = {
+  primary: "#2D2D2D",     // High contrast for headings
+  secondary: "#4F4F4F",   // Softer for body text
+  disabled: "#9E9E9E",    // Light for helper text
+  hint: "#757575"         // Medium for secondary info
+};
+
 const neutral = {
   50: "#F8FAF9",
   100: "#F1F5F4",
@@ -39,14 +47,116 @@ export function getTheme(mode: ThemeMode = "light", cultural: boolean = false) {
       warning: { main: accentTerracotta },
     },
     typography: {
-      fontFamily:
-        'InterVariable, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
-      h1: { fontWeight: 900, letterSpacing: -0.5, fontFamily: 'Playfair Display Variable, serif' },
-      h2: { fontWeight: 800, letterSpacing: -0.25, fontFamily: 'Playfair Display Variable, serif' },
-      h3: { fontWeight: 800, fontFamily: 'Playfair Display Variable, serif' },
-      h4: { fontWeight: 700 },
-      h5: { fontWeight: 700 },
-      button: { textTransform: "none", fontWeight: 600, letterSpacing: 0.2 },
+      // Primary font for UI & body text - Inter with system fallbacks
+      fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      
+      // Base font size and line height for optimal readability
+      fontSize: 16,
+      
+      // Heading typography - Bold, high contrast, tighter letter-spacing
+      h1: { 
+        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 700,
+        fontSize: '2.5rem',
+        lineHeight: 1.2,
+        letterSpacing: '-0.02em',
+        color: typographyColors.primary
+      },
+      h2: { 
+        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 700,
+        fontSize: '2rem',
+        lineHeight: 1.2,
+        letterSpacing: '-0.015em',
+        color: typographyColors.primary
+      },
+      h3: { 
+        fontFamily: 'Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 700,
+        fontSize: '1.5rem',
+        lineHeight: 1.2,
+        letterSpacing: '-0.01em',
+        color: typographyColors.primary
+      },
+      h4: { 
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 600,
+        fontSize: '1.25rem',
+        lineHeight: 1.3,
+        color: typographyColors.primary
+      },
+      h5: { 
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 600,
+        fontSize: '1.125rem',
+        lineHeight: 1.3,
+        color: typographyColors.primary
+      },
+      h6: { 
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 600,
+        fontSize: '1rem',
+        lineHeight: 1.4,
+        color: typographyColors.primary
+      },
+      
+      // Body text - Medium weight, optimal readability
+      body1: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 400,
+        fontSize: '1rem',
+        lineHeight: 1.5,
+        color: typographyColors.secondary
+      },
+      body2: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 400,
+        fontSize: '0.875rem',
+        lineHeight: 1.5,
+        color: typographyColors.secondary
+      },
+      
+      // Subtitles and captions
+      subtitle1: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 500,
+        fontSize: '1rem',
+        lineHeight: 1.4,
+        color: typographyColors.secondary
+      },
+      subtitle2: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 500,
+        fontSize: '0.875rem',
+        lineHeight: 1.4,
+        color: typographyColors.secondary
+      },
+      caption: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 300,
+        fontSize: '0.75rem',
+        lineHeight: 1.4,
+        color: typographyColors.hint
+      },
+      overline: {
+        fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 500,
+        fontSize: '0.75rem',
+        lineHeight: 1.4,
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+        color: typographyColors.hint
+      },
+      
+      // Button typography - Poppins for prominence
+      button: { 
+        fontFamily: 'Poppins, Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontWeight: 600,
+        fontSize: '0.875rem',
+        lineHeight: 1.4,
+        letterSpacing: '0.02em',
+        textTransform: 'none'
+      },
     },
     shape: { borderRadius: 16 },
     components: {
@@ -75,8 +185,54 @@ export function getTheme(mode: ThemeMode = "light", cultural: boolean = false) {
       },
       MuiChip: {
         styleOverrides: {
-          root: { borderRadius: 999 },
+          root: { 
+            borderRadius: 999,
+            fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+            fontWeight: 500,
+            fontSize: '0.75rem'
+          },
         },
+      },
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            '& .MuiInputLabel-root': {
+              fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+              fontWeight: 300,
+              color: typographyColors.hint
+            },
+            '& .MuiInputBase-input': {
+              fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+              fontWeight: 400,
+              fontSize: '1rem'
+            }
+          }
+        }
+      },
+      MuiFormHelperText: {
+        styleOverrides: {
+          root: {
+            fontFamily: 'Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+            fontWeight: 300,
+            fontSize: '0.75rem',
+            color: typographyColors.hint
+          }
+        }
+      },
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            position: 'fixed',
+            top: 0,
+            zIndex: 1100,
+            backdropFilter: 'blur(10px)',
+            backgroundColor: mode === 'light' ? 'rgba(248, 250, 249, 0.9)' : 'rgba(14, 26, 34, 0.9)',
+            borderBottom: `1px solid ${decorativeBorder}`,
+            boxShadow: mode === 'light' 
+              ? '0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)'
+              : '0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)'
+          }
+        }
       },
     },
   });
