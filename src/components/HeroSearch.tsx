@@ -65,7 +65,7 @@ export default function HeroSearch() {
               letterSpacing: { xs: '-0.015em', md: '-0.02em' },
               background: (theme) => theme.palette.mode === 'light' 
                 ? "linear-gradient(135deg, #2D7D32 0%, #689F38 100%)" 
-                : "linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%)",
+                : "linear-gradient(135deg, #66BB6A 0%, #A5D6A7 100%)",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",

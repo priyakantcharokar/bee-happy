@@ -226,6 +226,11 @@ a {
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
+/* Stronger text shadows for hero title in dark mode */
+[data-mui-color-scheme="dark"] .hero-bg .MuiTypography-h1 {
+  text-shadow: 0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.6) !important;
+}
+
 /* Ensure proper contrast for text over images */
 .MuiCardContent-root .MuiTypography-root {
   color: inherit !important;
@@ -242,10 +247,10 @@ a {
 }
 
 [data-mui-color-scheme="dark"] .hero-bg .MuiTypography-body1 {
-  background: rgba(0,0,0,0.7) !important;
+  background: rgba(255,255,255,0.95) !important;
   backdrop-filter: blur(8px) !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
-  color: rgba(255,255,255,0.95) !important;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+  color: #2D2D2D !important;
+  text-shadow: none !important;
 }
