@@ -1,0 +1,54 @@
+[
+  {
+    "id": "spiti-sojourn",
+    "title": "High Himalayan Spiti Sojourn",
+    "destination": "Spiti, Himachal Pradesh",
+    "durationDays": 7,
+    "priceFrom": 32999,
+    "images": [
+      "/images/unspalsh_1.avif",
+      "/images/unspalsh_2.avif"
+    ],
+    "tags": ["Mountains", "Fixed Departure", "Sustainable", "Heritage"],
+    "sustainabilityScore": 9
+  },
+  {
+    "id": "coorg-eco-farm",
+    "title": "Coorg Eco Farm Retreat",
+    "destination": "Coorg, Karnataka",
+    "durationDays": 3,
+    "priceFrom": 8999,
+    "images": [
+      "/images/unspalsh_3.avif",
+      "/images/unspalsh_4.avif"
+    ],
+    "tags": ["Farms", "Organic", "Weekend", "Heritage"],
+    "sustainabilityScore": 8
+  },
+  {
+    "id": "andaman-blue",
+    "title": "Andaman Blue — Ocean & Mangroves",
+    "destination": "Havelock & Neil Islands",
+    "durationDays": 5,
+    "priceFrom": 24999,
+    "images": [
+      "/images/unspalsh_5.avif",
+      "/images/unspalsh_6.avif"
+    ],
+    "tags": ["Oceans", "Snorkel", "Low Carbon"]
+  },
+  {
+    "id": "sunderbans-voluntour",
+    "title": "Sunderbans Mangrove Voluntourism",
+    "destination": "Sunderbans, West Bengal",
+    "durationDays": 4,
+    "priceFrom": 14999,
+    "images": [
+      "/images/unspalsh_2.avif",
+      "/images/unspalsh_3.avif"
+    ],
+    "tags": ["Voluntourism", "Mangroves", "Community", "Heritage"],
+    "sustainabilityScore": 10
+  }
+]
+

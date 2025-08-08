@@ -40,3 +40,26 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Smooth hero background */
+.hero-bg {
+  position: relative;
+}
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: -48px 0 auto 0;
+  height: 360px;
+  background: radial-gradient(1200px 300px at 20% 0%, rgba(45,125,50,0.12), transparent),
+              radial-gradient(1200px 300px at 80% 0%, rgba(104,159,56,0.10), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Cultural geometric divider pattern */
+.divider-arches {
+  --line: rgba(0,0,0,0.06);
+  background-image: radial-gradient(circle at 10px 10px, var(--line) 8px, transparent 9px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
