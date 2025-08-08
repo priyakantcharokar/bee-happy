@@ -1,7 +1,11 @@
 {
-  "name": "leisure-trips",
+  "name": "bee-happy",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priyakantcharokar/bee-happy.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build --no-lint",

@@ -27,8 +27,8 @@ A cutting-edge, responsive platform for discovering earth-friendly adventure tra
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/priyakantcharokar/where-my-heart-goes.git
-cd where-my-heart-goes
+git clone https://github.com/priyakantcharokar/bee-happy.git
+cd bee-happy
 ```
 
 2. Install dependencies:
