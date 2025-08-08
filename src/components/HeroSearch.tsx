@@ -83,7 +83,7 @@ export default function HeroSearch() {
               color: '#4F4F4F'
             }}
           >
-            Your adventure awaits — where every journey heals the planet and awakens your soul.
+            Discover extraordinary destinations while creating positive environmental change — where wanderlust meets purpose.
           </Typography>
         </Stack>
       </motion.div>

@@ -90,8 +90,8 @@ export default function ContactForm() {
             Ready for Your Next Adventure?
           </Typography>
           <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
-            Join our conscious traveller community! Share your travel dreams with us, 
-            and let&apos;s craft an unforgettable climate-positive experience together.
+            Become part of our mindful explorer network! Tell us about your wanderlust aspirations, 
+            and we&apos;ll design extraordinary earth-friendly adventures just for you.
           </Typography>
         </Stack>
 

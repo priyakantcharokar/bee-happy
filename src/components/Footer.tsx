@@ -28,7 +28,7 @@ export default function Footer() {
                 Bee Happy
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Where every journey heals the planet and awakens your soul.
+                Where wanderlust meets environmental stewardship and personal transformation.
               </Typography>
               
               {/* Social Media Icons */}

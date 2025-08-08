@@ -1,15 +1,15 @@
 # Bee Happy - Climate-Positive Leisure Trips
 
-A modern, responsive web application for booking eco-conscious leisure trips, farm stays, and sustainable travel experiences across India.
+A cutting-edge, responsive platform for discovering earth-friendly adventure travel, regenerative farm experiences, and mindful exploration throughout India.
 
 ## 🌟 Features
 
-- **Climate-Positive Travel**: Zero carbon emissions with sustainable practices
-- **Off-Beat Destinations**: Hidden gems not on typical tourist maps
-- **Cultural Immersion**: Connect with local communities and traditions
-- **Eco-Conscious Experiences**: Afforestation and organic farming programs
-- **Meaningful Impact**: Every journey contributes to conservation and community upliftment
-- **Soul-Stirring Stories**: Create memories that inspire responsible travel
+- **Earth-Friendly Adventures**: Carbon-neutral journeys with regenerative environmental impact
+- **Undiscovered Territories**: Unique locations beyond mainstream tourism circuits
+- **Authentic Cultural Exchange**: Deep immersion with indigenous communities and heritage
+- **Nature Restoration Programs**: Reforestation initiatives and sustainable agriculture experiences
+- **Purposeful Exploration**: Travel that directly supports conservation and social development
+- **Transformative Experiences**: Craft meaningful moments that inspire conscious living
 
 ## 🚀 Tech Stack
 

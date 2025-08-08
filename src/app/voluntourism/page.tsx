@@ -59,10 +59,10 @@ export default function VoluntourismPage() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <Stack alignItems="center" textAlign="center" spacing={3}>
             <Typography variant="h2" fontWeight={800} sx={{ maxWidth: 800 }}>
-              Travel with Purpose, Create Lasting Impact
+              Adventure with Intention, Build Sustainable Futures
             </Typography>
             <Typography variant="h5" color="text.secondary" sx={{ maxWidth: 600 }}>
-              Join meaningful voluntourism programs that combine authentic travel experiences with community development and environmental conservation.
+              Participate in impactful volunteer adventures that merge genuine cultural exploration with ecosystem restoration and local empowerment initiatives.
             </Typography>
             <Button variant="contained" size="large" sx={{ mt: 2 }}>
               Start Your Journey

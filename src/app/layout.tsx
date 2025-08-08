@@ -23,7 +23,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Bee Happy | Climate-Positive Leisure Trips",
   description:
-    "Book eco-conscious trips, farms, eco-destinations, voluntourism, and corporate retreats across India.",
+    "Experience transformative eco-adventures, sustainable farm stays, nature conservation programs, and mindful group retreats throughout India.",
 };
 
 export default function RootLayout({

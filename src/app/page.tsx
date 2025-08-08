@@ -21,21 +21,21 @@ export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   
   const features = [
-    { icon: <SpaIcon />, title: "Climate-Positive", desc: "Zero carbon emissions with sustainable practices" },
-    { icon: <ExploreIcon />, title: "Off-Beat Destinations", desc: "Hidden gems not on typical tourist maps" },
-    { icon: <GroupsIcon />, title: "Cultural Immersion", desc: "Connect with local communities and traditions" },
-    { icon: <ForestIcon />, title: "Eco-Conscious", desc: "Afforestation and organic farming experiences" },
-    { icon: <VolunteerActivismIcon />, title: "Meaningful Impact", desc: "Every journey contributes to local conservation and community upliftment" },
-    { icon: <CameraAltIcon />, title: "Soul-Stirring Stories", desc: "Create memories that inspire others to travel responsibly" }
+    { icon: <SpaIcon />, title: "Earth-Friendly Travel", desc: "Carbon-neutral adventures with regenerative impact" },
+    { icon: <ExploreIcon />, title: "Undiscovered Wonders", desc: "Unique locations beyond mainstream tourism" },
+    { icon: <GroupsIcon />, title: "Authentic Connections", desc: "Deep engagement with indigenous cultures and lifestyles" },
+    { icon: <ForestIcon />, title: "Nature Restoration", desc: "Reforestation projects and sustainable agriculture immersion" },
+    { icon: <VolunteerActivismIcon />, title: "Purposeful Adventures", desc: "Travel experiences that directly benefit environmental and social causes" },
+    { icon: <CameraAltIcon />, title: "Transformative Moments", desc: "Craft unforgettable experiences that motivate conscious living" }
   ];
 
   const testimonials = [
-    { name: "Priya Sharma", location: "Mumbai", text: "The Spiti trip was life-changing. Authentic experiences with zero guilt about environmental impact.", rating: 5 },
-    { name: "Rahul Gupta", location: "Delhi", text: "Bee Happy showed us the real India. The mangrove conservation work in Sunderbans was incredible.", rating: 5 },
-    { name: "Anita Desai", location: "Bangalore", text: "Perfect blend of adventure and sustainability. The organic farm stay in Coorg was magical.", rating: 5 },
-    { name: "Vikram Singh", location: "Jaipur", text: "Incredible voluntourism experience! Planting mangroves while learning about conservation was deeply meaningful.", rating: 5 },
-    { name: "Meera Patel", location: "Ahmedabad", text: "The organic farming program in Coorg taught us so much about sustainable living. Highly recommended!", rating: 5 },
-    { name: "Arjun Kumar", location: "Chennai", text: "Corporate retreat with a purpose. Our team bonded while contributing to environmental restoration.", rating: 5 }
+    { name: "Priya Sharma", location: "Mumbai", text: "Our Ladakh expedition exceeded expectations. Witnessing snow leopard conservation efforts while trekking was phenomenal.", rating: 5 },
+    { name: "Rahul Gupta", location: "Delhi", text: "Bee Happy crafted an amazing Kerala backwater experience. The coastal cleanup initiative felt incredibly rewarding.", rating: 5 },
+    { name: "Anita Desai", location: "Bangalore", text: "Exceptional balance of exploration and environmental stewardship. The Western Ghats biodiversity program was enlightening.", rating: 5 },
+    { name: "Vikram Singh", location: "Jaipur", text: "Outstanding volunteer tourism opportunity! Participating in coral restoration while diving in Andaman was transformative.", rating: 5 },
+    { name: "Meera Patel", location: "Ahmedabad", text: "The permaculture workshop in Himachal Pradesh opened our minds to sustainable living practices. Absolutely inspiring!", rating: 5 },
+    { name: "Arjun Kumar", location: "Chennai", text: "Team building with environmental impact. Our group loved the turtle conservation project in Odisha.", rating: 5 }
   ];
 
   // Auto-rotate testimonials every 2 seconds
@@ -73,8 +73,8 @@ export default function Home() {
               Your Climate-Positive Journey Starts Here
             </Typography>
             <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 700 }}>
-              Embark on transformative adventures that restore nature while enriching communities. 
-              From mystical mountains to pristine coastlines — your journey becomes a force for good.
+              Experience immersive adventures that nurture our planet while supporting local communities. 
+              From serene valleys to vibrant coral reefs — every step creates meaningful change.
             </Typography>
             <Grid container spacing={3} sx={{ mt: 2 }}>
               {features.map((feature, i) => (
