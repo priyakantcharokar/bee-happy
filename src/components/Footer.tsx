@@ -10,11 +10,11 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <FacebookIcon />, url: "https://facebook.com/gosmiles", label: "Facebook" },
-    { icon: <InstagramIcon />, url: "https://instagram.com/gosmiles", label: "Instagram" },
-    { icon: <TwitterIcon />, url: "https://twitter.com/gosmiles", label: "Twitter" },
-    { icon: <LinkedInIcon />, url: "https://linkedin.com/company/gosmiles", label: "LinkedIn" },
-    { icon: <YouTubeIcon />, url: "https://youtube.com/@gosmiles", label: "YouTube" },
+    { icon: <FacebookIcon />, url: "https://facebook.com/beehappy", label: "Facebook" },
+    { icon: <InstagramIcon />, url: "https://instagram.com/beehappy", label: "Instagram" },
+    { icon: <TwitterIcon />, url: "https://twitter.com/beehappy", label: "Twitter" },
+    { icon: <LinkedInIcon />, url: "https://linkedin.com/company/beehappy", label: "LinkedIn" },
+    { icon: <YouTubeIcon />, url: "https://youtube.com/@beehappy", label: "YouTube" },
     { icon: <WhatsAppIcon />, url: "https://wa.me/919876543210", label: "WhatsApp" }
   ];
 
@@ -25,7 +25,7 @@ export default function Footer() {
           <Grid item xs={12} md={4}>
             <Stack gap={2}>
               <Typography variant="h6" fontWeight={800} color="primary.main">
-                GoSmiles
+                Bee Happy
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 Where every journey heals the planet and awakens your soul.
@@ -104,7 +104,7 @@ export default function Footer() {
             <Stack gap={1.25}>
               <Typography variant="subtitle2" color="text.secondary" fontWeight={600}>Reach Us</Typography>
               <Typography variant="body2" color="text.secondary">
-                📧 gosmilescare@gmail.com
+                📧 beehappycare@gmail.com
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 📞 +91 98765 43210

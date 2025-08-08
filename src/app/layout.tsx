@@ -21,7 +21,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 
 export const metadata: Metadata = {
-  title: "GoSmiles | Climate-Positive Leisure Trips",
+  title: "Bee Happy | Climate-Positive Leisure Trips",
   description:
     "Book eco-conscious trips, farms, eco-destinations, voluntourism, and corporate retreats across India.",
 };

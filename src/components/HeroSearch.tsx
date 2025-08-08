@@ -70,7 +70,7 @@ export default function HeroSearch() {
               mb: 2
             }}
           >
-            GoSmiles — Go Sustainable Miles
+            Bee Happy — Buzz with Nature
           </Typography>
           <Typography 
             variant="body1" 

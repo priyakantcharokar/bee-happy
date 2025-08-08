@@ -31,7 +31,7 @@ export default function Home() {
 
   const testimonials = [
     { name: "Priya Sharma", location: "Mumbai", text: "The Spiti trip was life-changing. Authentic experiences with zero guilt about environmental impact.", rating: 5 },
-    { name: "Rahul Gupta", location: "Delhi", text: "GoSmiles showed us the real India. The mangrove conservation work in Sunderbans was incredible.", rating: 5 },
+    { name: "Rahul Gupta", location: "Delhi", text: "Bee Happy showed us the real India. The mangrove conservation work in Sunderbans was incredible.", rating: 5 },
     { name: "Anita Desai", location: "Bangalore", text: "Perfect blend of adventure and sustainability. The organic farm stay in Coorg was magical.", rating: 5 },
     { name: "Vikram Singh", location: "Jaipur", text: "Incredible voluntourism experience! Planting mangroves while learning about conservation was deeply meaningful.", rating: 5 },
     { name: "Meera Patel", location: "Ahmedabad", text: "The organic farming program in Coorg taught us so much about sustainable living. Highly recommended!", rating: 5 },

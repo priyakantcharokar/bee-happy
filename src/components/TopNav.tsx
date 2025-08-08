@@ -14,7 +14,7 @@ export default function TopNav() {
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ gap: 2 }}>
           <Typography variant="h6" fontWeight={800} color="primary.main">
-            GoSmiles
+            Bee Happy
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 1 }}>

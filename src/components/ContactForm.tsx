@@ -320,7 +320,7 @@ export default function ContactForm() {
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={3} justifyContent="center">
             <Box>
               <Typography variant="body1" fontWeight={600}>📧 Email</Typography>
-              <Typography variant="body2" color="text.secondary">gosmilescare@gmail.com</Typography>
+              <Typography variant="body2" color="text.secondary">beehappycare@gmail.com</Typography>
             </Box>
             <Box>
               <Typography variant="body1" fontWeight={600}>📞 Phone</Typography>

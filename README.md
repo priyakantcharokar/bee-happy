@@ -1,4 +1,4 @@
-# GoSmiles - Climate-Positive Leisure Trips
+# Bee Happy - Climate-Positive Leisure Trips
 
 A modern, responsive web application for booking eco-conscious leisure trips, farm stays, and sustainable travel experiences across India.
 
@@ -164,7 +164,7 @@ This is a private project. Contact the maintainer for contribution guidelines.
 
 ## 📞 Support
 
-For support, email gosmilescare@gmail.com or contact via WhatsApp through the website.
+For support, email beehappycare@gmail.com or contact via WhatsApp through the website.
 
 ---
 
